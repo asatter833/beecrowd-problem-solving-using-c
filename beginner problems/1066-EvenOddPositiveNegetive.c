@@ -14,7 +14,7 @@ int main()
             pos++;
         else if (x < 0)
             neg++;
-    }
+        }
 
     printf("%d valor(es) par(es)\n", even);
     printf("%d valor(es) impar(es)\n", odd);
