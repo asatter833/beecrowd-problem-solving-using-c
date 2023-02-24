@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include" 
+                "C:\\MinGW\\x86_64-w64-mingw32\\include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/cpp",
