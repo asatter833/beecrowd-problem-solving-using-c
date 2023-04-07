@@ -36,6 +36,4 @@ int main()
     printf("Percentual de coelhos: %.2lf %%\n", pC);
     printf("Percentual de ratos: %.2lf %%\n", pR);
     printf("Percentual de sapos: %.2lf %%\n", pS);
-
-    // nothing important
 }
