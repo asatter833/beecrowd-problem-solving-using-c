@@ -12,3 +12,6 @@ int main()
         printf("%d %d %d\n", k, l, m);
     }
 }
+// Simple solution is to square and cube the i and print it
+
+// printf("%d %d %d", i, i*i, i*i*i);
