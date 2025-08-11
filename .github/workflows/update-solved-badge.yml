@@ -6,7 +6,8 @@ on:
       - "**.c"
       - "**.sql"
   schedule:
-    - cron: "0 0 * * *" # runs daily at midnight UTC
+    - cron: "0 0 * * *" # daily at midnight UTC
+  workflow_dispatch: # allows manual trigger
 
 jobs:
   update-badge:
@@ -22,15 +23,15 @@ jobs:
           count=$(find . -type f \( -name "*.c" -o -name "*.sql" \) | wc -l)
           echo "problem_count=$count" >> $GITHUB_OUTPUT
 
-      - name: Update README.md
+      - name: Update README.md badge
         run: |
           count=${{ steps.count.outputs.problem_count }}
-          sed -i 's|!\[Problems Solved\](https://img.shields.io/badge/Problems%20Solved-[0-9]*-success)|![Problems Solved](https://img.shields.io/badge/Problems%20Solved-'$count'-success)|' README.md
+          sed -i -E 's|!\[Problems Solved\]\(https://img.shields.io/badge/Problems%20Solved-[0-9]+-success\)|![Problems Solved](https://img.shields.io/badge/Problems%20Solved-'$count'-success)|' README.md
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add README.md
-          git commit -m "Update solved problems count to ${{ steps.count.outputs.problem_count }}"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update solved problems count to ${{ steps.count.outputs.problem_count }}"
           git push
