@@ -13,7 +13,7 @@ Problems are organized into categories for easy navigation.
 
 ## 📂 Repository Structure
 
-📦 BEECROWD-PROBLEM-SOLVING-USING-C
+📦 BEECROWD-PROBLEM-SOLVING
 
 ┣ 📂 beginner problems # Beginner-level C problems
 
