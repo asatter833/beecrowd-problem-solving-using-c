@@ -14,6 +14,7 @@ Problems are organized into categories for easy navigation.
 ## 📂 Repository Structure
 
 📦 BEECROWD-PROBLEM-SOLVING-USING-C
+
 ┣ 📂 beginner problems # Beginner-level C problems
 
 ┣ 📂 mathematics problems # Mathematics-related C problems
@@ -39,4 +40,5 @@ Problems are directly from Beecrowd, and solutions are optimized for the online 
 This repository is for practice & learning purposes.
 
 ⭐ Support
+
 If you find this repo helpful, consider giving it a star ⭐ on GitHub — it helps keep me motivated!
