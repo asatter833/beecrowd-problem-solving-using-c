@@ -83,4 +83,4 @@ dkms.conf
 *.exe
 *.out
 *.app
-*.vscode
+*.vscode/
