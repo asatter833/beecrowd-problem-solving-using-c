@@ -19,7 +19,7 @@ Problems are organized into categories for easy navigation.
 
 ┣ 📂 mathematics problems # Mathematics-related C problems
 
-┣ 📂 sql # SQL query solutions
+┣ 📂 sql problem # SQL query solutions
 
 ┣ 📂 .vscode # VS Code settings (not necessary for running code)
 
