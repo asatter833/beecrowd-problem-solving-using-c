@@ -1,0 +1,36 @@
+name: Update Solved Problems Badge
+
+on:
+  push:
+    paths:
+      - "**.c"
+      - "**.sql"
+  schedule:
+    - cron: "0 0 * * *" # runs daily at midnight UTC
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+
+      - name: Count .c and .sql files
+        id: count
+        run: |
+          count=$(find . -type f \( -name "*.c" -o -name "*.sql" \) | wc -l)
+          echo "problem_count=$count" >> $GITHUB_OUTPUT
+
+      - name: Update README.md
+        run: |
+          count=${{ steps.count.outputs.problem_count }}
+          sed -i 's|!\[Problems Solved\](https://img.shields.io/badge/Problems%20Solved-[0-9]*-success)|![Problems Solved](https://img.shields.io/badge/Problems%20Solved-'$count'-success)|' README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Update solved problems count to ${{ steps.count.outputs.problem_count }}"
+          git push
