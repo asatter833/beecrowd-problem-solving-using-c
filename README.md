@@ -15,10 +15,15 @@ Problems are organized into categories for easy navigation.
 
 📦 BEECROWD-PROBLEM-SOLVING-USING-C
 ┣ 📂 beginner problems # Beginner-level C problems
+
 ┣ 📂 mathematics problems # Mathematics-related C problems
+
 ┣ 📂 sql # SQL query solutions
+
 ┣ 📂 .vscode # VS Code settings (not necessary for running code)
+
 ┣ 📜 .gitignore # Ignored files for Git
+
 ┗ 📜 README.md # Documentation
 
 ---
