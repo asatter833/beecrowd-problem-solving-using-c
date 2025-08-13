@@ -4,7 +4,7 @@
 ![Made with SQL](https://img.shields.io/badge/Made%20with-SQL-orange?logo=sqlite)
 ![Problems Solved](https://img.shields.io/badge/Problems%20Solved-99-success)
 ![Repo Size](https://img.shields.io/github/repo-size/asatter833/BEECROWD-PROBLEM-SOLVING-USING-C)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository contains my solutions to [Beecrowd](https://www.beecrowd.com.br/) problems using **C** and **SQL**.  
 Problems are organized into categories for easy navigation.
