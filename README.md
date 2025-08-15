@@ -2,7 +2,7 @@
 
 ![Made with C](https://img.shields.io/badge/Made%20with-C-blue?logo=c)
 ![Made with SQL](https://img.shields.io/badge/Made%20with-SQL-orange?logo=sqlite)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-106-success)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-107-success)
 ![Repo Size](https://img.shields.io/github/repo-size/asatter833/BEECROWD-PROBLEM-SOLVING-USING-C)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
