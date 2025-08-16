@@ -39,6 +39,4 @@ Problems are directly from Beecrowd, and solutions are optimized for the online 
 
 This repository is for practice & learning purposes.
 
-⭐ Support
-
-If you find this repo helpful, consider giving it a star ⭐ on GitHub — it helps keep me motivated!
+⭐ Support: If you find this repo helpful, consider giving it a star ⭐ on GitHub — it helps keep me motivated!
